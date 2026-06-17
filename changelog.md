@@ -11,3 +11,5 @@
 - Added `agents/prompt_director.md`, `agents/poster_director.md`, and `agents/project_manager.md`.
 - Added initial `guishan_king` concept notes from the shared conversation.
 - Added GitHub private repo sync plan for Mac mini and MacBook.
+- Imported first-pass `design word` memory: typography as protagonist, deep metaphor, and disciplined composition.
+- Imported first-pass `design word2` memory: visual-metaphor-driven word-image sentence, single strong concept, and advanced graphic design style.
