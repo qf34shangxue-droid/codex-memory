@@ -1,0 +1,26 @@
+# Secrets and local credentials
+.env
+.env.*
+*.pem
+*.key
+*.token
+*secret*
+*credential*
+*password*
+
+# Codex / app runtime state
+auth.json
+sessions/
+logs_*.sqlite
+state_*.sqlite
+*.sqlite
+*.sqlite3
+
+# Browser and OS noise
+.DS_Store
+Thumbs.db
+
+# Local scratch
+tmp/
+temp/
+*.log
