@@ -13,3 +13,4 @@
 - Added GitHub private repo sync plan for Mac mini and MacBook.
 - Imported first-pass `design word` memory: typography as protagonist, deep metaphor, and disciplined composition.
 - Imported first-pass `design word2` memory: visual-metaphor-driven word-image sentence, single strong concept, and advanced graphic design style.
+- Added active project memory entries for `用户体验与交互设计课程`, `论文写作训练营`, and `Codex / Hermes / OpenClaw 环境维护`.
