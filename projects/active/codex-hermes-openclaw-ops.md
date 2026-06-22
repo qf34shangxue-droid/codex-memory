@@ -33,6 +33,7 @@ This project tracks:
 ## Recent Stable Findings
 
 - `codex-memory` was initialized, committed, and pushed to GitHub on 2026-06-17.
+- MacBook cloned the private repository to `/Users/hitman/Documents/codex-memory` on 2026-06-22 and configured global Codex startup rules for safe pull, update, commit, push, and conflict handling.
 - GitHub CLI is authenticated for `qf34shangxue-droid` via system keyring.
 - Git operations are configured to use GitHub CLI credential helper.
 - Do not print or store GitHub tokens.
@@ -99,10 +100,9 @@ This file should contain only operational memory, endpoints, symptoms, and safe 
 
 ## Next Likely Tasks
 
-- On the second MacBook, clone `codex-memory`.
-- Add both Mac mini and MacBook startup instructions to read this repo first.
 - Optionally create a small health-check checklist for Codex/Hermes/OpenClaw.
 
 ## History
 
 - 2026-06-17: Added first active project memory entry.
+- 2026-06-22: Connected MacBook at `/Users/hitman/Documents/codex-memory` and added global Codex memory workflow rules.

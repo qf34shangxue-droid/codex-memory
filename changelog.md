@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-22
+
+- Connected the MacBook clone at `/Users/hitman/Documents/codex-memory` to the private GitHub repository.
+- Added global Codex rules to load `SYSTEM.md` on memory-related requests, pull safely before work, and commit and push meaningful Markdown memory updates.
+- Added conflict-stop and sensitive-data exclusion rules for cross-device synchronization.
+
 ## 2026-06-17
 
 - Initialized `codex-memory` repo structure in iCloud Drive.
