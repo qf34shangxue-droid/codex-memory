@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-07-21
+
+- Added the active `音乐文件整理` project memory after moving it from the temporary output inbox into the formal project directory.
+- Recorded the completed read-only MP3 audit, current safety boundary, post-migration test result, and next non-mutating planning step.
+
 ## 2026-06-22
 
 - Connected the MacBook clone at `/Users/hitman/Documents/codex-memory` to the private GitHub repository.
