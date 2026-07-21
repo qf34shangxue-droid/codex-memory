@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-22
+
+- Recorded completion of the explicitly approved 46-track MP3 tag update across four albums after a successful 10-track real-library pilot.
+- Recorded 46/46 verification, exact manifest-path matching, unchanged full-library counts, and preservation of audio and non-target metadata.
+- Recorded the safely contained U+0085 JSONL parsing issue, automatic restore, regression fix, regenerated approved plan, and 157-test Mac/Windows verification.
+
 ## 2026-07-21
 
 - Added the active `音乐文件整理` project memory after moving it from the temporary output inbox into the formal project directory.
