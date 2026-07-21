@@ -18,6 +18,7 @@ Last updated: 2026-07-21 CST
 - Online matching completed without modifying the music library: 46 proposed writes, 34 unchanged, 6,205 review, and 643 skip across 6,928 MP3 files.
 - The 46 proposed writes cover four albums and only fill missing track number, album artist, and disc number fields.
 - A 20-group stratified review passed; the frozen plan remains unapproved for real-library writes.
+- A three-file Windows C: copy-only pilot passed: 3/3 applied, 3/3 verified, 3/3 restored, with audio and non-target fingerprints unchanged. The final H: manifest still matches the baseline.
 
 ## Safety boundary
 
@@ -29,4 +30,4 @@ Last updated: 2026-07-21 CST
 
 ## Next step
 
-After explicit user approval, run the frozen plan against 3–5 temporary MP3 copies on Windows C: and verify write/readback/restore. This approval must not be treated as permission to modify `H:`; real-library pilot approval is a separate gate.
+Wait for explicit user approval before modifying one real album on `H:`. Start with a single 10-track album, verify immediately, and do not expand scope without another decision.

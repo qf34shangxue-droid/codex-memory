@@ -5,6 +5,7 @@
 - Added the active `音乐文件整理` project memory after moving it from the temporary output inbox into the formal project directory.
 - Recorded the completed read-only MP3 audit, current safety boundary, post-migration test result, and next non-mutating planning step.
 - Recorded the fresh unchanged manifest, completed online-only plan, conservative action counts, 20-group review, and the separate approval gate before temporary-copy testing.
+- Recorded the successful three-file C: copy-only apply/verify/restore pilot and the still-unchanged final H: manifest.
 
 ## 2026-06-22
 
