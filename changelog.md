@@ -5,6 +5,8 @@
 - Recorded completion of the explicitly approved 46-track MP3 tag update across four albums after a successful 10-track real-library pilot.
 - Recorded 46/46 verification, exact manifest-path matching, unchanged full-library counts, and preservation of audio and non-target metadata.
 - Recorded the safely contained U+0085 JSONL parsing issue, automatic restore, regression fix, regenerated approved plan, and 157-test Mac/Windows verification.
+- Recorded the new safety-gated move pipeline, 170-test Mac/Windows verification, and successful organization of 80 verified tracks across seven albums into `H:\标签已整理`.
+- Recorded the fresh review of all 6,848 remaining tracks: 6,205 version-level review records and 643 existing read-error skips, with no additional automatic writes.
 
 ## 2026-07-21
 

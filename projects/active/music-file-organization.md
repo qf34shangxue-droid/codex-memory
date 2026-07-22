@@ -24,6 +24,10 @@ Last updated: 2026-07-22 CST
 - Post-write manifest membership is identical. Exactly the 46 approved paths changed at the ID3v2/file-metadata level; the other 6,882 tracks are unchanged.
 - Post-write audit totals remain 6,928 files, 6,285 readable, 643 existing read errors, 566 album directories, and 103,356,750,704 bytes.
 - The first full-plan attempt safely stopped before new writes because an embedded Unicode U+0085 was treated as a line break. All 46 candidates were automatically restored and semantically verified. A regression test and minimal JSONL parser fix were added before regenerating and completing the approved plan.
+- A safety-gated move pipeline was added and verified with 170 tests on both Mac and Windows; two Windows ffmpeg tests were skipped by design.
+- The new `H:\标签已整理` root now contains 80 verified tracks across seven complete albums, each in a validated `album artist—album` directory. The pilot moved 10 tracks, then the remaining 70; all 80 passed full-file, audio, target-tag, and non-target-tag verification.
+- The source now contains 6,848 tracks and the organized root contains 80, preserving the original total of 6,928 with no overwrite, conflict, loss, or duplicate.
+- A fresh audit and online plan reviewed all 6,848 remaining tracks: 6,205 remain version-level review and 643 remain read-error skips. No additional safe writes were produced, so all remain in place.
 
 ## Safety boundary
 
@@ -35,4 +39,4 @@ Last updated: 2026-07-22 CST
 
 ## Next step
 
-Keep the remaining 6,205 review records and 643 skipped records untouched. If work continues, select and manually validate a small new batch before producing another write plan.
+Continue version-level album review for the remaining 6,205 records while leaving the 643 read-error records untouched. Each newly confirmed complete album should pass frozen tag planning, write verification, frozen move planning, and move verification before entering `H:\标签已整理`.
