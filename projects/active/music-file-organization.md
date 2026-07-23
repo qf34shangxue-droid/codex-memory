@@ -1,42 +1,37 @@
 # 音乐文件整理
 
-Last updated: 2026-07-22 CST
+Last updated: 2026-07-23 CST
 
 ## Project location
 
 `/Users/qiufeng/Documents/New project 2/Codex项目/进行中/音乐文件整理`
 
-## Current state
+## Goal
 
-- The project was formally moved out of the temporary `outputs/` inbox on 2026-07-21.
-- The target library is the Windows music directory `H:\-中文流行-`.
-- A read-only audit of 6,928 MP3 files has been completed.
-- Online matching and the explicitly approved 46-file tag write have been completed; no rename was performed.
-- The project contains the Python tool, tests, deployment artifacts, and final read-only audit evidence.
-- Post-fix Mac and Windows verification passed all 157 tests; two Windows ffmpeg E2E tests were skipped by design.
-- A fresh Windows read-only batch `20260721-resume` confirmed the library is byte-for-byte unchanged at the manifest level from the 2026-07-17 baseline.
-- Online matching completed without modifying the music library: 46 proposed writes, 34 unchanged, 6,205 review, and 643 skip across 6,928 MP3 files.
-- The 46 proposed writes cover four albums and only fill missing track number, album artist, and disc number fields.
-- A 20-group stratified review passed, and the user approved a 10-track real-library pilot followed by all remaining approved files if successful.
-- A three-file Windows C: copy-only pilot passed: 3/3 applied, 3/3 verified, 3/3 restored, with audio and non-target fingerprints unchanged. The final H: manifest still matches the baseline.
-- The real 《旧爱新欢》 pilot passed 10/10, then the other 36 approved tracks were written. Final verification is 46/46 across four albums.
-- Writes only filled missing track number, album artist, and disc number. No filenames, directories, audio payloads, titles, album titles, track artists, or non-target tags were changed.
-- Post-write manifest membership is identical. Exactly the 46 approved paths changed at the ID3v2/file-metadata level; the other 6,882 tracks are unchanged.
-- Post-write audit totals remain 6,928 files, 6,285 readable, 643 existing read errors, 566 album directories, and 103,356,750,704 bytes.
-- The first full-plan attempt safely stopped before new writes because an embedded Unicode U+0085 was treated as a line break. All 46 candidates were automatically restored and semantically verified. A regression test and minimal JSONL parser fix were added before regenerating and completing the approved plan.
-- A safety-gated move pipeline was added and verified with 170 tests on both Mac and Windows; two Windows ffmpeg tests were skipped by design.
-- The new `H:\标签已整理` root now contains 80 verified tracks across seven complete albums, each in a validated `album artist—album` directory. The pilot moved 10 tracks, then the remaining 70; all 80 passed full-file, audio, target-tag, and non-target-tag verification.
-- The source now contains 6,848 tracks and the organized root contains 80, preserving the original total of 6,928 with no overwrite, conflict, loss, or duplicate.
-- A fresh audit and online plan reviewed all 6,848 remaining tracks: 6,205 remain version-level review and 643 remain read-error skips. No additional safe writes were produced, so all remain in place.
+Complete and normalize the six required MP3 tag fields, cross-check uncertain albums online, and archive readable files under `H:\标签已整理` using `artist-album` directories with frozen plans and rollback evidence.
 
-## Safety boundary
+## Final state
 
-- Recheck the Windows host and music volume before resuming.
-- Regenerate a current read-only manifest/audit before planning because the library may have changed since 2026-07-17.
-- Generate and review a non-mutating online plan before any write operation.
-- Records with read errors and their affected membership groups must not be written automatically.
-- The completed authorization covered only the frozen 46-file scope. Any additional files require a new plan and approval.
+- `H:\标签已整理` contains 6,926 readable MP3 files, 103,385,467,413 bytes, and 825 album directories.
+- Missing required fields: 0. Unknown title/artist placeholders: 0. Generic `Track01`-style titles: 0. Malformed track/disc fractions: 0.
+- The final correction round updated 142 files; all 142 passed post-write reread verification.
+- 111 affected files were internally relocated to their corrected `artist-album` directories; all 111 passed full-file fingerprint and tag verification with no overwrite.
+- Final evidence: `windows-run-20260722-organize/final-quality-v2/` and `windows-run-20260722-organize/final-audit-v4/`.
+- Final report: `windows-run-20260722-organize/FINAL_REPORT_FINAL.md`.
+- Fresh tests: Mac 224/224 passed; Windows 224 passed with 2 expected ffmpeg skips.
+
+## Cross-check sources
+
+- Apple Music/iTunes, MusicBrainz, Spotify, JOOX, Qobuz, record-label pages, retailer catalogs, and original CUE metadata were used in combination.
+- The Teresa Teng 1977 Shimbashi release was identified by CUE barcode `4988005165978` and checked against MusicBrainz, Rakuten Books, Suruga-ya, and Qobuz.
+- Li Chien-fu's `柴拉可汗` was checked against JOOX, Five Music, and the National Museum of Taiwan History catalog.
+
+## Unrepairable source/audio exceptions
+
+- Two files remain in `H:\-中文流行-` because they have no valid MPEG audio header: one is 0 bytes and one is 87 bytes.
+- 181 organized files have complete readable tags but no measurable duration: 180 are approximately 2 KB tag-only placeholders inherited from the source set; one is an 8,922,906-byte duration-unreadable file.
+- These are audio-payload defects, not missing tags. Audio data was not fabricated or rewritten.
 
 ## Next step
 
-Continue version-level album review for the remaining 6,205 records while leaving the 643 read-error records untouched. Each newly confirmed complete album should pass frozen tag planning, write verification, frozen move planning, and move verification before entering `H:\标签已整理`.
+The tag organization project is closed. Audio repair or replacement of the 183 payload-level exceptions requires a separate user-approved project because it would modify audio content.

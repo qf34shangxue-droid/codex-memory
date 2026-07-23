@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-07-23
+
+- Completed the MP3 tag organization project: 6,926 readable files are archived under `H:\标签已整理`, with zero missing required fields, zero unknown placeholders, zero generic `Track01` titles, and zero malformed track/disc fractions.
+- Recorded the final 142 tag corrections and 111 internal relocations, all independently reread and fingerprint-verified.
+- Recorded fresh Mac and Windows test results and the 183 payload-level exceptions that cannot be repaired through tag editing alone.
+
 ## 2026-07-22
 
 - Recorded completion of the explicitly approved 46-track MP3 tag update across four albums after a successful 10-track real-library pilot.
